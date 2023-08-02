@@ -12,8 +12,8 @@ function successors=explore_successors(x_cell,y_cell,h,x_target,y_target,in_vali
                     for c1=1:c2
                         if(s_x == in_valid(c1,1) && s_y == in_valid(c1,2)) % successor not an obstacle or already visited
                             flag=0;
-                        end;
-                    end;
+                        end
+                    end
                     if (flag == 1)
                         successors(successor_count,1) = s_x;
                         successors(successor_count,2) = s_y;

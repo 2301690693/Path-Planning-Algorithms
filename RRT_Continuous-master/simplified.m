@@ -3,6 +3,7 @@ function [path_smooth] = simplified(map, path, vertices, delta)
 path_smooth = path(1); % initing with goal
 currentIndex = 1; % path array iterator
 currentSmoothIndex = numel(path); % path reverse array iterator
+% 
 
 while currentIndex < numel(path)
     
